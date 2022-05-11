@@ -1,0 +1,19 @@
+DROP TABLE IF EXISTS EMP;
+DROP TABLE IF EXISTS DEPT;
+
+CREATE TABLE DEPT (
+    DEPTNO int PRIMARY KEY ,
+    DNAME varchar (35) NOT NULL ,
+    LOC varchar (35) NOT NULL
+);
+
+CREATE TABLE EMP (
+    EMPNO int PRIMARY KEY,
+    ENAME varchar(35) NOT NULL,
+    JOB varchar(20) NOT NULL,
+    MGR int,
+    HIREDATE date NOT NULL,
+    SAL numeric(7,2) NOT NULL,
+    COMM numeric(7,2),
+    DEPTNO INT NOT NULL REFERENCES DEPT(DEPTNO)
+);
