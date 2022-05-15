@@ -8,4 +8,4 @@
 - 5.Click New and create the database "assignment2adb"
 - 6.Run the Database Creation Code
 - 7.Run the Database Insertion Code
-- 8.Use this link to access the database site: http://localhost/Assignment2ADB.php
+- 8.Use this link to access the PHP page: http://localhost/Assignment2ADB.php
